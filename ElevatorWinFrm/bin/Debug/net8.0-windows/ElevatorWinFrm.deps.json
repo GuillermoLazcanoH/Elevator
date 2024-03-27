@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ElevatorWinFrm/1.0.0": {
+        "dependencies": {
+          "ElevatorLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ElevatorWinFrm.dll": {}
+        }
+      },
+      "ElevatorLibrary/1.0.0": {
+        "runtime": {
+          "ElevatorLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ElevatorWinFrm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ElevatorLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
