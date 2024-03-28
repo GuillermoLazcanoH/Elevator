@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Proyectos\\Elevador\\ElevatorWF\\",
+  "WorkspaceRootPath": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|d:\\proyectos\\elevador\\elevatorwf\\elevatorwinfrm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|solutionrelative:elevatorwinfrm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9F407244-56AC-43C3-97D9-741899056292}|ElevatorLibrary\\ElevatorLibrary.csproj|D:\\Proyectos\\Elevador\\GitHub\\Elevator\\elevatorlibrary\\elevator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F407244-56AC-43C3-97D9-741899056292}|ElevatorLibrary\\ElevatorLibrary.csproj|solutionrelative:elevatorlibrary\\elevator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|d:\\proyectos\\elevador\\elevatorwf\\elevatorwinfrm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27BAF974-DE4E-446E-9E74-9271D2FCED1B}|TestElevator\\TestElevator.csproj|d:\\proyectos\\elevador\\github\\elevator\\testelevator\\elevatormodeltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BAF974-DE4E-446E-9E74-9271D2FCED1B}|TestElevator\\TestElevator.csproj|solutionrelative:testelevator\\elevatormodeltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|d:\\proyectos\\elevador\\github\\elevator\\elevatorwinfrm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|solutionrelative:elevatorwinfrm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|d:\\proyectos\\elevador\\elevatorwf\\elevatorwinfrm\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|solutionrelative:elevatorwinfrm\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|d:\\proyectos\\elevador\\github\\elevator\\elevatorwinfrm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|solutionrelative:elevatorwinfrm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F407244-56AC-43C3-97D9-741899056292}|ElevatorLibrary\\ElevatorLibrary.csproj|d:\\proyectos\\elevador\\elevatorwf\\elevatorlibrary\\elevator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F407244-56AC-43C3-97D9-741899056292}|ElevatorLibrary\\ElevatorLibrary.csproj|solutionrelative:elevatorlibrary\\elevator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|d:\\proyectos\\elevador\\github\\elevator\\elevatorwinfrm\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA1A2480-5D50-4EDA-8370-625EFF7646E7}|ElevatorWinFrm\\ElevatorWinFrm.csproj|solutionrelative:elevatorwinfrm\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 242,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,11 +42,37 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ElevatorModelTest.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\ElevatorModelTest.cs",
+              "RelativeDocumentMoniker": "TestElevator\\ElevatorModelTest.cs",
+              "ToolTip": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\ElevatorModelTest.cs",
+              "RelativeToolTip": "TestElevator\\ElevatorModelTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T16:17:54.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Elevator.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorLibrary\\Elevator.cs",
+              "RelativeDocumentMoniker": "ElevatorLibrary\\Elevator.cs",
+              "ToolTip": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorLibrary\\Elevator.cs",
+              "RelativeToolTip": "ElevatorLibrary\\Elevator.cs",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAAAHQAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T15:42:32.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorWinFrm\\Form1.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorWinFrm\\Form1.cs",
               "RelativeDocumentMoniker": "ElevatorWinFrm\\Form1.cs",
-              "ToolTip": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorWinFrm\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorWinFrm\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "ElevatorWinFrm\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T05:31:28.194Z",
@@ -50,42 +80,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorWinFrm\\Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorWinFrm\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "ElevatorWinFrm\\Form1.Designer.cs",
-              "ToolTip": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorWinFrm\\Form1.Designer.cs",
+              "ToolTip": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorWinFrm\\Form1.Designer.cs",
               "RelativeToolTip": "ElevatorWinFrm\\Form1.Designer.cs",
               "ViewState": "AQIAAJQAAAAAAAAAAAAkwKIAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T05:30:56.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T05:30:56.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Elevator.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorLibrary\\Elevator.cs",
-              "RelativeDocumentMoniker": "ElevatorLibrary\\Elevator.cs",
-              "ToolTip": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorLibrary\\Elevator.cs",
-              "RelativeToolTip": "ElevatorLibrary\\Elevator.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADkAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T05:25:00.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorWinFrm\\Form1.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorWinFrm\\Form1.cs",
               "RelativeDocumentMoniker": "ElevatorWinFrm\\Form1.cs",
-              "ToolTip": "D:\\Proyectos\\Elevador\\ElevatorWF\\ElevatorWinFrm\\Form1.cs",
+              "ToolTip": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorWinFrm\\Form1.cs",
               "RelativeToolTip": "ElevatorWinFrm\\Form1.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAAAYwMUAAAAhAAAA",
+              "ViewState": "AQIAALgAAAAAAAAAAAAAAMoAAACbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T05:20:08.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T05:20:08.302Z"
             }
           ]
         }

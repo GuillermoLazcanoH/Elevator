@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IslMmi3GlLLjnQATHg1e7ygupsFan0Uxu+TE1Sl+fPWRbvjbNaro7LBt/AXeb7RAIO+OeF5OHIi8X2US4zM69g==",
+  "dgSpecHash": "5sbP5YZeUdylR3OAmBtTRO4xlWb/Y4b324qE4gVIHbuhDhxf/uI08rzF9mPPUoCAz/gUZqxLFcibJwCEdNe3mA==",
   "success": true,
-  "projectFilePath": "D:\\Proyectos\\Elevador\\ElevatorWF\\TestElevator\\TestElevator.csproj",
+  "projectFilePath": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\TestElevator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GuillermoLazcano\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\GuillermoLazcano\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

@@ -12,6 +12,7 @@ namespace ElevatorWinFrm {
         }
 
         private void chkAuto_CheckedChanged(object sender, EventArgs e) {
+            //Manual or Auto
             tmrAuto.Enabled = chkAuto.Checked;
             btnNextMove.Enabled = !chkAuto.Checked;
         }
@@ -25,11 +26,13 @@ namespace ElevatorWinFrm {
         }
 
         private void ElevatorMove() {
+            //Next step simulator and refresh screen
             elevator.Move();
             ElevatorStatusRefresh(elevator);
         }
 
         private void btnAdd_Click(object sender, EventArgs e) {
+            //Add new user to waiting pipe and refresh screen
             int origin = cbxOrigin.SelectedIndex;
             int destiny = cbxDestiny.SelectedIndex;
             User usr = new User() {
@@ -37,18 +40,14 @@ namespace ElevatorWinFrm {
                 Name = txtUserName.Text
             };
 
-            elevator.NewUserToWaithingQueue(origin, usr);
-            if (origin > destiny) {
-                elevator.Floors[origin].ButtonDown.State = ButtonState.Pressed;
-            } else {
-                elevator.Floors[origin].ButtonUp.State = ButtonState.Pressed;
-            }
+            elevator.AddUserToWaithingQueue(origin, usr);
             DisplayFloorStatus(elevator, origin, floorSets[origin]);
         }
 
 
 
         private void ElevatorStatusRefresh(Elevator elevator) {
+            //Refresh all screen
             DisplayDirection(elevator, btnDisplayUp, btnDisplayDown);
             DisplayCurrentFloor(elevator, lblCurrentFloor);
             DisplayCurrentPassengers(elevator, lstElevator);
@@ -56,12 +55,14 @@ namespace ElevatorWinFrm {
         }
 
         private void DisplayAllFloorStatus(Elevator elevator, List<DisplayFloorSet> floorSets) {
+            //Refresh all waiting pipe
             for (int i = Elevator.MinFloor; i <= Elevator.MaxFloor; i++) {
                 DisplayFloorStatus(elevator, i, floorSets[i]);
             }
         }
 
         private void DisplayFloorStatus(Elevator elevator, int i, DisplayFloorSet floorSet) {
+            //Refresh a floor waiting pipe
             DisplayFloorStatus(elevator,
                                 i,
                                 floorSet.btnUp,
@@ -72,8 +73,9 @@ namespace ElevatorWinFrm {
         }
 
         private void DisplayFloorStatus(Elevator elevator, int indexfloor, System.Windows.Forms.Button btnUp, System.Windows.Forms.Button btnDown, ListBox lstUsers, CheckBox chk, Label lblStatus) {
+            //Refresh a floor status screen
             Floor floor = elevator.Floors[indexfloor];
-            chk.Checked = elevator.InsideButtons[indexfloor].IsPressed;
+            chk.Checked = elevator.IsFloorButtonPressed(indexfloor);
             DisplayLabelStatus(lblStatus, elevator.CurrentFloor == indexfloor);
             ListResetDataSource(lstUsers, floor.WaitingQueue);
             if (btnUp != null)
@@ -83,10 +85,12 @@ namespace ElevatorWinFrm {
         }
 
         private void DisplayCurrentPassengers(Elevator elevator, ListBox lstElevator) {
+            //Show current passenger
             ListResetDataSource(lstElevator, elevator.Passengers);
         }
 
         private void ListResetDataSource(ListBox lstUsers, List<User> waitingQueue) {
+            //Update passengers list
             lstUsers.DataSource = null;
             lstUsers.Items.Clear();
             lstUsers.DisplayMember = "Name";
@@ -94,18 +98,22 @@ namespace ElevatorWinFrm {
         }
 
         private void DisplayButtonStatus(System.Windows.Forms.Button btn, bool isPressed) {
+            //Display active current button
             btn.BackColor = isPressed ? Color.Lime : Color.LightGray;
         }
 
         private void DisplayLabelStatus(System.Windows.Forms.Label lblStatus, bool isPressed) {
+            //Display active current floor
             lblStatus.BackColor = isPressed ? Color.Lime : Color.LightGray;
         }
 
         private void DisplayCurrentFloor(Elevator elevator, Label lblCurrentFloor) {
+            //Display floor number
             lblCurrentFloor.Text = elevator.Floors[elevator.CurrentFloor].Id.ToString();
         }
 
         private void DisplayDirection(Elevator elevator, System.Windows.Forms.Button btnDisplayUp, System.Windows.Forms.Button btnDisplayDown) {
+            //Indicate if the elevator is in motion and direction
             switch (elevator.CurrentDirection) {
                 case Direction.Up:
                     btnDisplayUp.BackColor = Color.Lime;
@@ -128,16 +136,19 @@ namespace ElevatorWinFrm {
         }
 
         private void PressDownButton(object sender) {
+            //Request the elevator to pick up a passenger to go upward and refresh screen status.
             var btn = sender as System.Windows.Forms.Button;
             int floor = int.Parse(btn.Tag.ToString());
-            elevator.Floors[floor - 1].ButtonDown.State = ButtonState.Pressed;
+            elevator.PressDownButton(floor-1);
+            
             DisplayButtonStatus(btn, true);
         }
 
         private void PressUpButton(object sender) {
+            //Request the elevator to pick up a passenger to go downward and refresh screen
             var btn = sender as System.Windows.Forms.Button;
             int floor = int.Parse(btn.Tag.ToString());
-            elevator.Floors[floor - 1].ButtonUp.State = ButtonState.Pressed;
+            elevator.PressUpButton(floor-1);
             DisplayButtonStatus(btn, true);
         }
 
@@ -151,19 +162,15 @@ namespace ElevatorWinFrm {
         }
 
         private void PressInternalButton(object sender) {
+            //Request the elevator to go to a specific floor.
             var chk = sender as System.Windows.Forms.CheckBox;
             int floor = int.Parse(chk.Tag.ToString());
-            if (elevator.CurrentFloor != floor ) {
-                elevator.InsideButtons[floor].State = ButtonState.Pressed;
-                chk.Checked = true;
-            } else {
-                elevator.InsideButtons[floor].State = ButtonState.Released;
-                chk.Checked = false;
-            }
-            
+            elevator.PressFloorButton(floor);
+            chk.Checked = elevator.IsFloorButtonPressed(floor); 
         }
 
         private void Elevator_Load(object sender, EventArgs e) {
+            //Prepare specific screen elements for each floor to be displayed.
             floorSets = new List<DisplayFloorSet> {
                 new DisplayFloorSet() {btnUp = btnF1Up,
                                        lstUsers = lstF1Users,
@@ -192,7 +199,9 @@ namespace ElevatorWinFrm {
         }
 
         private void cbx_SelectedIndexChanged(object sender, EventArgs e) {
-            btnAdd.Enabled = (cbxDestiny.SelectedIndex != cbxOrigin.SelectedIndex) &&
+            //Validate all fields before adding a new user to the waiting list.
+            //Requesting the elevator to go to the same floor where it currently is located is an option to be validated. It sometimes occurs in real life.
+            btnAdd.Enabled = //(cbxDestiny.SelectedIndex != cbxOrigin.SelectedIndex) &&
                                 cbxDestiny.SelectedIndex >= 0  &&
                                 cbxOrigin.SelectedIndex >= 0 &&
                                 !string.IsNullOrWhiteSpace(txtUserName.Text);

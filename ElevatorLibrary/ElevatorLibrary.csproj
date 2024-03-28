@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Button.cs" />
     <Compile Include="ButtonState.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Elevator.cs" />
     <Compile Include="Floor.cs" />

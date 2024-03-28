@@ -1,17 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\Elevador\\ElevatorWF\\TestElevator\\TestElevator.csproj": {}
+    "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\TestElevator.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\Elevador\\ElevatorWF\\TestElevator\\TestElevator.csproj": {
+    "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorLibrary\\ElevatorLibrary.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorLibrary\\ElevatorLibrary.csproj",
+        "projectName": "ElevatorLibrary",
+        "projectPath": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorLibrary\\ElevatorLibrary.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\TestElevator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\Elevador\\ElevatorWF\\TestElevator\\TestElevator.csproj",
+        "projectUniqueName": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\TestElevator.csproj",
         "projectName": "TestElevator",
-        "projectPath": "D:\\Proyectos\\Elevador\\ElevatorWF\\TestElevator\\TestElevator.csproj",
+        "projectPath": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\TestElevator.csproj",
         "packagesPath": "C:\\Users\\GuillermoLazcano\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\Elevador\\ElevatorWF\\TestElevator\\obj\\",
+        "outputPath": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\TestElevator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,7 +47,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorLibrary\\ElevatorLibrary.csproj": {
+                "projectPath": "D:\\Proyectos\\Elevador\\GitHub\\Elevator\\ElevatorLibrary\\ElevatorLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

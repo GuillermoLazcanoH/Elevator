@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElevatorWinFrm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d588e1ab771d9b3fed2de10814035ca30fe99a1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElevatorWinFrm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElevatorWinFrm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

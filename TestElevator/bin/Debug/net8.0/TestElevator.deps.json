@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "TestElevator/1.0.0": {
         "dependencies": {
-          "ElevatorModel": "1.0.0",
+          "ElevatorLibrary": "1.0.0",
           "MSTest.TestAdapter": "3.1.1",
           "MSTest.TestFramework": "3.1.1",
           "Microsoft.NET.Test.Sdk": "17.8.0",
@@ -348,9 +348,9 @@
         }
       },
       "System.Reflection.Metadata/1.6.0": {},
-      "ElevatorModel/1.0.0": {
+      "ElevatorLibrary/1.0.0": {
         "runtime": {
-          "ElevatorModel.dll": {}
+          "ElevatorLibrary.dll": {}
         }
       },
       "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions/14.0.0.0": {
@@ -439,7 +439,7 @@
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
     },
-    "ElevatorModel/1.0.0": {
+    "ElevatorLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

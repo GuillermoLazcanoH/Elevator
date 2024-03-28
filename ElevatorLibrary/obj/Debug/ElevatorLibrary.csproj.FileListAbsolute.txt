@@ -4,3 +4,9 @@ D:\Proyectos\Elevador\ElevatorWF\ElevatorLibrary\bin\Debug\ElevatorLibrary.dll
 D:\Proyectos\Elevador\ElevatorWF\ElevatorLibrary\bin\Debug\ElevatorLibrary.pdb
 D:\Proyectos\Elevador\ElevatorWF\ElevatorLibrary\obj\Debug\ElevatorLibrary.dll
 D:\Proyectos\Elevador\ElevatorWF\ElevatorLibrary\obj\Debug\ElevatorLibrary.pdb
+D:\Proyectos\Elevador\GitHub\Elevator\ElevatorLibrary\bin\Debug\ElevatorLibrary.dll
+D:\Proyectos\Elevador\GitHub\Elevator\ElevatorLibrary\bin\Debug\ElevatorLibrary.pdb
+D:\Proyectos\Elevador\GitHub\Elevator\ElevatorLibrary\obj\Debug\ElevatorLibrary.csproj.AssemblyReference.cache
+D:\Proyectos\Elevador\GitHub\Elevator\ElevatorLibrary\obj\Debug\ElevatorLibrary.csproj.CoreCompileInputs.cache
+D:\Proyectos\Elevador\GitHub\Elevator\ElevatorLibrary\obj\Debug\ElevatorLibrary.dll
+D:\Proyectos\Elevador\GitHub\Elevator\ElevatorLibrary\obj\Debug\ElevatorLibrary.pdb
